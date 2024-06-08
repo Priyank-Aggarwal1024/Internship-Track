@@ -33,9 +33,25 @@ function VideoReview(props) {
         temp.pop();
         setCarousel(temp)
     }
-    const nextCallback = () => {
-        let temp = [...carousel, carousel[0]];
-        temp.shift();
+    const nextCallback = (idx) => {
+        let temp1 = carousel.filter((item, index) => {
+            if (index < idx) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        })
+        let temp2 = carousel.filter((item, index) => {
+            if (index >= idx) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        })
+        let temp = [...temp2, ...temp1];
+        console.log("Hello")
         setCarousel(temp)
     }
     return (
@@ -51,7 +67,7 @@ function VideoReview(props) {
                     {
                         carousel.map((item, idx) => {
                             return (
-                                <div className="video-carousel-card" key={idx}>
+                                <div className="video-carousel-card" key={idx} onClick={idx == 0 ? () => { } : () => nextCallback(idx)}>
                                     <img src={item.img} alt="Video Review" />
                                     <div className="video-review-author">{item.name}</div>
                                     <div className="video-review-profession">{item.profession}</div>
@@ -62,7 +78,7 @@ function VideoReview(props) {
                 </div>
                 <div className="video-review-bottom">
                     <PrevArrow onClick={prevCallback} style={{}} classN="" />
-                    <NextArrow onClick={nextCallback} style={{}} classN="" />
+                    <NextArrow onClick={() => nextCallback(1)} style={{}} classN="" />
                     {/* <Next onClick={prevCallback} style={{}} classN="" /> */}
                 </div>
             </div>

@@ -1,6 +1,5 @@
 .section-videoreview {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     gap: 61px;
     padding-right: 0;
@@ -21,13 +20,13 @@
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    /* overflow: hidden; */
-
+    overflow: hidden;
 }
 
 .video-review-top {
     display: flex;
     gap: 24px;
+
 }
 
 .video-review-bottom {
@@ -50,6 +49,8 @@
 
 .video-carousel-card>img {
     aspect-ratio: 236/254;
+    border-radius: 12px;
+
 }
 
 .video-review-author {
