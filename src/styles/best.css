@@ -1,0 +1,24 @@
+.best-image {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto 0 auto;
+}
+
+.best-image>img {
+    width: 100%;
+}
+
+.small-best-image {
+    display: none;
+}
+
+@media (width<580px) {
+    .large-best-image {
+        display: none;
+    }
+
+    .small-best-image {
+        display: block;
+    }
+}

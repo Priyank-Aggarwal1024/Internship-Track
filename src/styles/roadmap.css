@@ -1,0 +1,357 @@
+.roadmap {
+    border-radius: 21px;
+    background: #350B35;
+    padding: 48px 16px;
+}
+
+.roadmap-heading {
+    color: var(--Woodsmoke-50, #F5F5F6);
+    line-height: 1.4;
+}
+
+.roadmap-card-top {
+    display: grid;
+    grid-template-columns: 93px 77px minmax(min-content, auto);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 64px auto;
+}
+
+
+.rct-r {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+    height: 100%;
+}
+
+.rct-l {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 75%;
+}
+
+.rct-m {
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    /* gap: 40px; */
+}
+
+.rct-m-1,
+.rct-m-2,
+.rct-m-3 {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rct-m-4 {
+    width: 100%;
+    position: relative;
+}
+
+.rct-m-1::before,
+.rct-m-2::before,
+.rct-m-3::before,
+.rct-m-4::before {
+    content: '';
+    position: absolute;
+    clip-path: polygon(100% 0, 0 50%, 100% 96%);
+    width: 15px;
+    height: 15px;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.rct-m-1::after,
+.rct-m-2::after,
+.rct-m-3::after,
+.rct-m-4::after {
+    content: '';
+    position: absolute;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 15px;
+    height: 15px;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+
+
+.roadmap-vertical-line {
+    height: 100%;
+    border-left: 1px dashed white;
+}
+
+.rct-r-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(100deg, #B1B1B1 0.89%, #BDBDBD 9.58%, #EBE6E6 26.9%, #FFF 44.84%, #F0F0F0 64.21%, #CBCBCB 84.67%, #BEBEBE 102.86%);
+    padding: 20px 25px;
+    /* max-width: 538px; */
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.rct-r-btn {
+    display: inline-flex;
+    padding: 13.056px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border-radius: 5.221px;
+    background: #800080;
+    box-shadow: 0px 2.793px 6.215px 0px rgba(0, 0, 0, 0.25);
+    color: var(--Color-2, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.5%;
+    min-width: 160px;
+    /* 19.76px */
+}
+
+.rct-r-heading {
+    color: var(--Eminence-950, #450D45);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rct-r--t {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+}
+
+.rct-r--b {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 428px;
+}
+
+.roadmap-card-icon {
+    width: 20px;
+    height: 19px;
+}
+
+.card-num-div {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.card-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 93px;
+    height: 93px;
+    flex-shrink: 0;
+    background: linear-gradient(141deg, #B1B1B1 15.65%, #BDBDBD 21.44%, #D0D0D0 33%, #FAFAFA 44.97%, #EDEDED 57.9%, #CBCBCB 71.55%, #BEBEBE 83.69%);
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+
+}
+
+.card-num>p {
+    font-family: Poppins;
+    font-size: 48.857px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-num-div-4 {
+    height: 0;
+}
+
+.roadmap-card-bottom {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.rcb-card {
+    display: flex;
+    padding: 26px 32px;
+    align-items: center;
+    border-radius: 11.936px;
+    background: var(--Linear, linear-gradient(100deg, #B1B1B1 0.89%, #BDBDBD 9.58%, #EBE6E6 26.9%, #FFF 44.84%, #F0F0F0 64.21%, #CBCBCB 84.67%, #BEBEBE 102.86%));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 384px;
+}
+
+.rcb-bottom {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rcb-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.rcb-top-heading {
+    color: var(--Eminence-800, #7F2781);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 121%;
+    /* 36.3px */
+}
+
+@media (width<1280px) {}
+
+@media (width<1180px) {
+    .rct-r-heading {
+        font-size: 26px;
+    }
+
+    .rct-r-heading {
+        font-size: 25px;
+    }
+}
+
+@media (width<980px) {}
+
+@media (width<780px) {
+    .roadmap-card-top {
+        grid-template-columns: 27px minmax(min-content, auto);
+        grid-template-rows: 1fr;
+        gap: 8px;
+    }
+
+    .rcb-top-heading {
+        font-size: 20px;
+    }
+
+    .rct-r-heading {
+        font-size: 20px;
+        max-width: calc(100% - 134px);
+    }
+
+    .rct-r-card {
+        padding: 15px 14px;
+    }
+
+
+
+    .rct-l {
+        display: none;
+    }
+
+    .roadmap-vertical-line {
+        display: none;
+    }
+
+    .rct-m-1,
+    .rct-m-2,
+    .rct-m-3 {
+        height: 100%;
+        border-left: 1px dashed white;
+    }
+
+    .rct-m-1::before,
+    .rct-m-2::before,
+    .rct-m-3::before,
+    .rct-m-4::before {
+        display: none;
+    }
+
+    .rct-r-btn {
+        display: flex;
+        min-width: unset;
+        width: 126px;
+        height: 38px;
+        padding: 10px 11px;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        border-radius: 5.221px;
+        background: #800080;
+        box-shadow: 0px 2.793px 6.215px 0px rgba(0, 0, 0, 0.25);
+        font-size: 14px;
+    }
+
+    .rct-m-1::after,
+    .rct-m-2::after,
+    .rct-m-3::after,
+    .rct-m-4::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .rct-r--t {
+        gap: 4px;
+    }
+
+    .rct-r--b,
+    .rcb-bottom {
+        font-size: 14px;
+    }
+}
+
+@media (width<580px) {}
+
+@media (width<420px) {
+    .rct-r-heading {
+        max-width: unset;
+    }
+
+    .rct-r--t {
+        flex-wrap: wrap;
+    }
+
+    .rcb-card {
+        padding: 21px 16px;
+    }
+
+    .rcb-top-icon>svg {
+        width: 23px;
+        height: 13px;
+    }
+}

@@ -1,0 +1,182 @@
+.skill {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 51px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skill-cards {
+    max-width: 1202px;
+    /* min-width: 100%; */
+    /* margin: 0 auto; */
+    column-gap: 16px;
+    row-gap: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 4px 19.2px 0px #E7E7E7;
+    height: 201px;
+    width: 187px;
+}
+
+.skill-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8.27px;
+}
+
+.skill-card-icon>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.skill-card-text {
+    color: var(--585858, #585858);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 36px */
+}
+
+.achivement {
+    border-radius: 21px;
+    background: #350B35;
+    padding: 64px 64px;
+}
+
+.achivement-cards {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    justify-content: center;
+}
+
+.achivement-card {
+    border-radius: 17px;
+    background: var(--Linear, linear-gradient(100deg, #B1B1B1 0.89%, #BDBDBD 9.58%, #EBE6E6 26.9%, #FFF 44.84%, #F0F0F0 64.21%, #CBCBCB 84.67%, #BEBEBE 102.86%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 172px;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.achive-head {
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.5%;
+    /* 44.46px */
+    background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achive-text {
+    color: var(--Woodsmoke-950, #1B1B1D);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+}
+
+.achieve-sub {
+    background: linear-gradient(180deg, rgba(15, 14, 15, 0.50) 0%, rgba(126, 38, 126, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.5%;
+}
+
+@media (width<1280px) {}
+
+@media (width<1180px) {}
+
+@media (width<980px) {
+    .achivement {
+        padding: 64px 32px;
+    }
+}
+
+@media (width<780px) {
+    .skill-card-icon>img {
+        width: 41.371px;
+        height: 41.371px;
+    }
+
+    .skill-cards {
+        row-gap: 14px;
+        column-gap: 14px;
+    }
+
+    .achivement {
+        padding: 64px 16px;
+    }
+
+    .skill-card {
+        width: 105px;
+        height: 120px;
+    }
+
+    .skill-card-inner {
+        gap: 6px;
+    }
+
+    .skill-card-text {
+        font-size: 14px;
+    }
+
+    .achivement-card {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (width<580px) {
+    .achivement {
+        padding: 64px 12px;
+    }
+}
+
+@media (width<480px) {
+    .achivement {
+        padding: 64px 12px;
+    }
+}
+
+@media (width<220px) {
+    .achivement-card {
+        width: 100%;
+        height: 100%;
+        padding: 14px 8px;
+    }
+}
