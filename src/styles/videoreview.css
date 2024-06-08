@@ -72,6 +72,11 @@
 }
 
 @media (width<1080px) {
+    .video-review-heading {
+        min-width: unset;
+        width: 100%;
+    }
+
     .section-videoreview {
         flex-direction: column;
         align-items: flex-start;
