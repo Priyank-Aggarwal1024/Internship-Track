@@ -58,6 +58,10 @@
         width: 100%;
         gap: 20px;
     }
+
+    .guarantee-div>img {
+        max-width: 480px;
+    }
 }
 
 @media (width<980px) {}
@@ -75,11 +79,11 @@
 
 @media (width<480px) {
     .guarantee-div {
-        padding: 20px 10px;
+        padding: 20px 16px;
     }
 
     .guarantee-div>img {
-        width: 100%;
+        width: 80%;
     }
 
     .company-hiring-box {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './layout.css'
 import Navbar from './home/Navbar';
 import Hero from './home/Hero';
@@ -12,7 +12,17 @@ import Testimonials from './home/Testimonials';
 import Best from './home/Best';
 import Faq from './home/Faq';
 import Footer from './home/Footer';
+import VideoReview from './home/VideoReview';
 function Layout(props) {
+    const [wid, setWid] = useState(window.innerWidth);
+    window.addEventListener('resize', (e) => {
+        if (window.innerWidth < 880 && wid >= 880) {
+            setWid(window.innerWidth)
+        }
+        else if (window.innerWidth >= 880 && wid < 880) {
+            setWid(window.innerWidth)
+        }
+    })
     return (
         <div className='layout'>
             <Navbar />
@@ -22,8 +32,14 @@ function Layout(props) {
             <Highlights />
             <Internship />
             <Roadmap />
+            {
+                wid < 880 ? <Testimonials /> : null
+            }
             <Skill />
-            <Testimonials />
+            {
+                wid >= 880 ? <Testimonials /> : null
+            }
+            <VideoReview />
             <Best />
             <Faq />
             <Footer />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/testimonials.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -64,14 +64,25 @@ const testimonial = [
 
 ]
 function Testimonials(props) {
+    const [wid, setWid] = useState(window.innerWidth);
+    window.addEventListener('resize', (e) => {
+        if (window.innerWidth < 880 && wid >= 880) {
+            setWid(window.innerWidth)
+        }
+        else if (window.innerWidth >= 880 && wid < 880) {
+            setWid(window.innerWidth)
+        }
+    })
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: wid < 880 ? 1 : 2,
         slidesToScroll: 1,
         prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />
+        nextArrow: <NextArrow />,
+        autoplay: true,
+        autoplaySpeed: 3000
 
     };
     return (

@@ -80,7 +80,7 @@
 @media (width<1080px) {
     .faq {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: fit-content fit-content;
     }
 
     .faq-left,
