@@ -2,51 +2,51 @@ import React from 'react';
 import '../../styles/skill.css'
 const cards = [
     {
-        icon: './public/skill1.png',
+        icon: './skill1.png',
         text: 'HTML & CSS'
     },
     {
-        icon: './public/skill2.png',
+        icon: './skill2.png',
         text: 'Taliwind'
     },
     {
-        icon: './public/skill3.png',
+        icon: './skill3.png',
         text: 'React'
     },
     {
-        icon: './public/skill4.png',
+        icon: './skill4.png',
         text: 'Express.js'
     },
     {
-        icon: './public/skill5.png',
+        icon: './skill5.png',
         text: 'AI tools'
     },
     {
-        icon: './public/skill6.png',
+        icon: './skill6.png',
         text: 'ChatGPT'
     },
     {
-        icon: './public/skill7.png',
+        icon: './skill7.png',
         text: 'Redux'
     },
     {
-        icon: './public/skill8.png',
+        icon: './skill8.png',
         text: 'MongoDB'
     },
     {
-        icon: './public/skill9.png',
+        icon: './skill9.png',
         text: 'DSA'
     },
     {
-        icon: './public/skill10.png',
+        icon: './skill10.png',
         text: 'JavaScript'
     },
     {
-        icon: './public/skill11.png',
+        icon: './skill11.png',
         text: 'APIs'
     },
     {
-        icon: './public/skill12.png',
+        icon: './skill12.png',
         text: 'Node.js'
     },
 ]
