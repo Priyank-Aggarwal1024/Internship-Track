@@ -159,6 +159,17 @@
     }
 }
 
+@media (width<1420px) {
+    .achivement {
+        padding: 64px 12px;
+    }
+
+    .achivement-card {
+        width: 160px;
+        height: 160px;
+    }
+}
+
 @media (width<580px) {
     .achivement {
         padding: 64px 12px;
@@ -168,6 +179,16 @@
 @media (width<480px) {
     .achivement {
         padding: 64px 12px;
+    }
+}
+
+@media (width<390px) {
+    .section.section-skill {
+        padding: 64px 6px;
+    }
+
+    .achivement-cards {
+        gap: 10px;
     }
 }
 

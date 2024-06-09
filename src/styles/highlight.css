@@ -44,9 +44,29 @@
     width: 163px;
 }
 
+@media (width<1350px) {
+    .highlight-card {
+        padding: 24px;
+    }
+
+    .highlight-cards {
+        gap: 10px;
+    }
+}
+
+@media (width<1190px) {
+    .highlight-card {
+        padding: 32px;
+    }
+
+    .highlight-cards {
+        gap: 16px;
+    }
+}
+
 @media (width<580px) {
     .highlight-cards {
-        gap: 8px;
+        gap: 14px;
     }
 
     .highlight-card {

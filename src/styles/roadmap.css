@@ -335,6 +335,32 @@
 
 
 @media (width<420px) {
+    .section.section-roadmap {
+        padding: 48px 8px;
+    }
+
+    .roadmap {
+        padding: 48px 10px;
+    }
+
+    .rct-r-btn {
+        width: 126px;
+    }
+
+    .rct-r {
+        /* align-items: center; */
+        gap: 18px;
+    }
+
+    .rct-r-heading {
+        width: calc(100% - 130px);
+        line-height: 1.2;
+    }
+
+    .rct-r-card {
+        height: fit-content;
+    }
+
     .rct-r-heading {
         max-width: unset;
     }
@@ -350,5 +376,19 @@
     .rcb-top-icon>svg {
         width: 23px;
         height: 13px;
+    }
+}
+
+@media (width<375px) {
+    .rct-r--t {
+        flex-wrap: wrap;
+    }
+
+    .rct-r-heading {
+        width: 100%;
+    }
+
+    .rct-r {
+        align-items: center;
     }
 }

@@ -91,10 +91,6 @@
 }
 
 @media (width<580px) {
-    .faq {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
 
     .faq-left,
     .faq-right {
