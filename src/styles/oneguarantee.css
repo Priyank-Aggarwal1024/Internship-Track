@@ -128,7 +128,6 @@
     /* left: -10px; */
 }
 
-@media (width<1280px) {}
 
 @media (width<1180px) {
     .guarantee-img {
@@ -206,5 +205,3 @@
 
     }
 }
-
-@media (width<480px) {}

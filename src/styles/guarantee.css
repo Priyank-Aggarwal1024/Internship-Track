@@ -47,7 +47,6 @@
     margin-right: 25px;
 }
 
-@media (width<1280px) {}
 
 @media (width<1080px) {
     .guarantee-div {
@@ -64,9 +63,6 @@
     }
 }
 
-@media (width<980px) {}
-
-@media (width<780px) {}
 
 @media (width<580px) {
 

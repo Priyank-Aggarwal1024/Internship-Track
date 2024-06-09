@@ -133,7 +133,6 @@
 }
 
 
-@media (width<1280px) {}
 
 @media (width<980px) {
     .hero-section {
@@ -178,7 +177,6 @@
     }
 }
 
-@media (width<980px) {}
 
 @media (width<780px) {
     .main-heading {
