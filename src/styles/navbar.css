@@ -78,15 +78,22 @@
     }
 }
 
+@media (width<1080px) {
+
+    .int-track-nav-list {
+        display: none;
+    }
+
+
+}
+
 @media (width<980px) {
 
     .int-track-nav-btn {
         padding-right: 16px;
     }
 
-    .int-track-nav-list {
-        display: none;
-    }
+
 }
 
 @media (width<780px) {
