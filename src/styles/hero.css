@@ -1,21 +1,21 @@
-.hero-section {
+.int-track-hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.hero-section>div {
+.int-track-hero-section>div {
     width: 50%;
 }
 
-.hero-left {
+.int-track-hero-left {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.hero-left-iit {
+.int-track-hero-left-iit {
     display: flex;
     padding: 10px 21px;
     justify-content: center;
@@ -27,31 +27,31 @@
     width: fit-content;
 }
 
-.hero-left-top {
+.int-track-hero-left-top {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.main-heading {
+.int-track-main-heading {
     line-height: 120%;
     max-height: 264px;
     font-size: clamp(36px, 4vw, 55px);
 }
 
 
-.hero-left-bottom-card {
+.int-track-hero-left-bottom-card {
     display: flex;
     gap: 10px;
 }
 
-.hlbc-card {
+.int-track-hlbc-card {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.hlbc-card-left {
+.int-track-hlbc-card-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +61,12 @@
     border: 1px solid rgba(128, 0, 128, 0.70);
 }
 
-.hero-left-svg {
+.int-track-hero-left-svg {
     width: 24px;
     height: 24px;
 }
 
-.hero-right {
+.int-track-hero-right {
     display: flex;
     gap: 17px;
     align-items: center;
@@ -74,7 +74,7 @@
     position: relative;
 }
 
-.hero-right-design {
+.int-track-hero-right-design {
     position: absolute;
     right: -80px;
     top: -300px;
@@ -83,32 +83,32 @@
 
 }
 
-.small-hero-design {
+.int-track-small-hero-design {
     display: none;
 }
 
-.hero-right-series-1 {
+.int-track-hero-right-series-1 {
     padding-top: 28px;
 }
 
-.hero-right-series {
+.int-track-hero-right-series {
     gap: 15px;
     display: flex;
     flex-direction: column;
 
 }
 
-.hero-right-series-1>.hero-right-card {
+.int-track-hero-right-series-1>.int-track-hero-right-card {
     padding: 24px 26px;
     z-index: 100;
 }
 
-.hero-right-series-2>.hero-right-card {
+.int-track-hero-right-series-2>.int-track-hero-right-card {
     padding: 24px 9px;
     z-index: 100;
 }
 
-.hero-right-card {
+.int-track-hero-right-card {
     max-width: 192px;
     border-radius: 17px;
     background: var(--Color-2, #FFF);
@@ -122,11 +122,11 @@
     justify-content: center;
 }
 
-.hero-right-card>svg {
+.int-track-hero-right-card>svg {
     justify-self: center;
 }
 
-.hero-right-card-text {
+.int-track-hero-right-card-text {
     line-height: 150%;
     text-align: center;
     text-transform: capitalize;
@@ -135,41 +135,41 @@
 
 
 @media (width<980px) {
-    .hero-section {
+    .int-track-hero-section {
         flex-direction: column;
     }
 
-    .hero-right-design {
+    .int-track-hero-right-design {
         right: -63px;
         top: -250px;
     }
 
-    .large-hero-design {
+    .int-track-large-hero-design {
         display: none;
     }
 
-    .small-hero-design {
+    .int-track-small-hero-design {
         display: block;
         top: 0;
         right: -64px;
 
     }
 
-    .hero-section>div {
+    .int-track-hero-section>div {
         width: 100%;
     }
 
-    .hero-right {
+    .int-track-hero-right {
         margin-top: 48px;
     }
 
-    .main-heading {
+    .int-track-main-heading {
         font-size: 55px;
         max-height: none;
         width: 70%;
     }
 
-    .main-heading>.text-light-pink {
+    .int-track-main-heading>.int-track-text-light-pink {
         background: var(--Linear, linear-gradient(96deg, rgba(128, 0, 128, 0.87) 22.35%, rgba(255, 134, 76, 0.87) 100%));
         background-clip: text;
         -webkit-background-clip: text;
@@ -179,65 +179,65 @@
 
 
 @media (width<780px) {
-    .main-heading {
+    .int-track-main-heading {
         font-size: 45px;
         width: 100%;
     }
 
-    .section.hero-section {
+    .int-track-section.int-track-hero-section {
         padding-top: 50px;
     }
 }
 
 @media (width<580px) {
-    .hero-left-svg {
+    .int-track-hero-left-svg {
         width: 20px;
         height: 20px;
     }
 
-    .hero-right {
+    .int-track-hero-right {
         gap: 12px;
     }
 
-    .hero-right-series-1>.hero-right-card {
+    .int-track-hero-right-series-1>.int-track-hero-right-card {
         padding: 19px 21px;
     }
 
-    .hero-right-series-2>.hero-right-card {
+    .int-track-hero-right-series-2>.int-track-hero-right-card {
         padding: 19.522px 7.384px 19.522px 6.652px;
     }
 
-    .hlbc-card-right>svg {
+    .int-track-hlbc-card-right>svg {
         width: 20px;
     }
 
-    .hlbc-card {
+    .int-track-hlbc-card {
         gap: 3px;
     }
 }
 
 @media (width<480px) {
-    .main-heading {
+    .int-track-main-heading {
         font-size: 34px;
     }
 
-    .hero-left-bottom-card {
+    .int-track-hero-left-bottom-card {
         gap: 4px;
     }
 
-    .hlbc-card-left {
+    .int-track-hlbc-card-left {
         padding: 7px 4px;
         gap: 5px;
     }
 }
 
 @media (width<330px) {
-    .hero-right {
+    .int-track-hero-right {
         flex-wrap: wrap;
 
     }
 
-    .hero-right-series-1 {
+    .int-track-hero-right-series-1 {
         padding-top: 0;
     }
 }

@@ -4,102 +4,104 @@
 }
 
 
-.text-black {
+.int-track-text-black {
     color: black;
 }
 
-.text-white {
+.int-track-text-white {
     color: white;
 }
 
-.text-pink {
+.int-track-text-pink {
     color: #800080;
 }
 
-.text-light-pink {
-    color: var(--800080, rgba(128, 0, 128, 0.87));
+.int-track-text-light-pink {
+    color: var(--800080, rgba(128, 0, 128, 0.int-track-87));
 
 }
 
-.bg-light-pink {
-    background: rgba(128, 0, 128, 0.87);
+.int-track-bg-light-pink {
+    background: rgba(128, 0, 128, 0.int-track-87);
 
 }
 
-.wood-smoke-950 {
+.int-track-wood-smoke-950 {
     color: var(--Woodsmoke-950);
 }
 
-.text-light-black {
+.int-track-text-light-black {
     color: var(--light-black);
 }
 
-.f-55 {
+.int-track-f-55 {
     font-size: 55px;
 }
 
-.f-48 {
+.int-track-f-48 {
     font-size: 48px;
 }
 
-.f-18 {
+.int-track-f-18 {
     font-size: 18px;
 }
 
-.f-16 {
+.int-track-f-16 {
     font-size: 16px;
 }
 
-.fw-400 {
+.int-track-fw-400 {
     font-weight: 400;
 }
 
-.fw-500 {
+.int-track-fw-500 {
     font-weight: 500;
 }
 
-.fw-600 {
+.int-track-fw-600 {
     font-weight: 600;
 }
 
-.fw-700 {
+.int-track-fw-700 {
     font-weight: 700;
 }
 
-.fw-800 {
+.int-track-fw-800 {
     font-weight: 800;
 }
 
-.fw-900 {
+.int-track-fw-900 {
     font-weight: 900;
 }
 
-.va-mid {
+.int-track-va-mid {
     vertical-align: middle;
 }
 
-.section {
+.int-track-section {
     max-width: 1440px;
     margin: 0 auto;
+    overflow:hidden;
+    width:100%;
 }
 
-.section {
+.int-track-section {
     padding: 64px 64px;
 
 }
 
-.text-center {
+.int-track-text-center {
     text-align: center;
 }
 
 @media (width>1280px) {
-    .section {
+    .int-track-section {
         max-width: 100%;
     }
 }
 
 @media (width<1280px) {
-    .section {
+    .int-track-section {
         padding: 64px 64px;
     }
 }
@@ -107,25 +109,25 @@
 @media (width<1180px) {}
 
 @media (width<980px) {
-    .section {
+    .int-track-section {
         padding: 64px 32px;
     }
 }
 
 @media (width<780px) {
-    .section {
+    .int-track-section {
         padding: 64px 32px;
     }
 
-    .f-16 {
+    .int-track-f-16 {
         font-size: 15px;
     }
 
-    .f-18 {
+    .int-track-f-18 {
         font-size: 15px;
     }
 
-    .f-48 {
+    .int-track-f-48 {
         font-size: 38px;
     }
 
@@ -134,25 +136,25 @@
 @media (width<580px) {}
 
 @media (width<480px) {
-    .section {
+    .int-track-section {
         padding: 48px 16px;
     }
 
-    .f-48 {
+    .int-track-f-48 {
         font-size: 28px;
     }
 
-    .f-16 {
+    .int-track-f-16 {
         font-size: 14px;
     }
 
-    .f-18 {
+    .int-track-f-18 {
         font-size: 12px;
     }
 }
 
 /* @media (width<400px) {
-    .section {
+    .int-track-section {
         padding: 48px 12px;
     }
 } */

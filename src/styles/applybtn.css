@@ -1,4 +1,4 @@
-.apply-now-btn {
+.int-track-apply-now-btn {
     color: var(--Color-2, #FFF);
     text-align: center;
     font-family: Poppins;
@@ -19,13 +19,13 @@
 }
 
 @media (width<780px) {
-    .apply-now-btn {
+    .int-track-apply-now-btn {
         font-size: 17px;
     }
 }
 
 @media (width<580px) {
-    .apply-now-btn {
+    .int-track-apply-now-btn {
         font-size: 16px;
     }
 }

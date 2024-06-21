@@ -72,27 +72,27 @@ function Faq(props) {
 
     }
     return (
-        <section className="section section-faq">
-            <h2 className="faq-heading fw-500 f-48 text-black text-center">
-                Frequently Asked <span className="text-pink fw-700">Questions</span>
+        <section className="int-track-section int-track-section-faq">
+            <h2 className="int-track-faq-heading int-track-fw-500 int-track-f-48 int-track-text-black int-track-text-center">
+                Frequently Asked <span className="int-track-text-pink int-track-fw-700">Questions</span>
             </h2>
-            <div className="faq">
-                <div className="faq-left">
-                    <h3 className="checkout-faq-heading">Check Out Our FAQs!</h3>
+            <div className="int-track-faq">
+                <div className="int-track-faq-left">
+                    <h3 className="int-track-checkout-faq-heading">Check Out Our FAQs!</h3>
                     {
                         checkout.map((item, idx) => {
                             return (
-                                <div className="faq-item" key={idx}>
-                                    <input type="checkbox" value={item.checked} name={`checkout-${idx}`} className='checkbox' />
-                                    <label className='ques' htmlFor={`checkout-${idx}`} onClick={() => checkoutCallback(idx)}>
+                                <div className="int-track-faq-item" key={idx}>
+                                    <input type="checkbox" value={item.checked} name={`checkout-${idx}`} className="int-track-checkbox" />
+                                    <label className="int-track-ques" htmlFor={`checkout-${idx}`} onClick={() => checkoutCallback(idx)}>
                                         <p>{item.ques}</p>
-                                        <div className="faq-icon">
+                                        <div className="int-track-faq-icon">
                                             {
-                                                item.checked ? <img src={check} alt="Check" /> : <img src={uncheck} alt="Check" />
+                                                item.checked ? <img src={uncheck} alt="UnCheck" /> : <img src={check} alt="Check" />
                                             }
                                         </div>
                                     </label>
-                                    <div className="ans" style={{ display: item.checked ? "block" : "none" }}>
+                                    <div className="int-track-ans" style={{ display: item.checked ? "block" : "none" }}>
                                         {
                                             item.ans
                                         }
@@ -102,24 +102,24 @@ function Faq(props) {
                         })
                     }
                 </div>
-                <div className="faq-right">
-                    <h3 className="refund-faq-heading">
+                <div className="int-track-faq-right">
+                    <h3 className="int-track-refund-faq-heading">
                         TuteDude and Refund
                     </h3>
                     {
                         refund.map((item, idx) => {
                             return (
-                                <div className="faq-item" key={idx}>
-                                    <input type="checkbox" value={item.checked} name={`checkout-${idx}`} className='checkbox' />
-                                    <label className='ques' htmlFor={`checkout-${idx}`} onClick={() => refundCallback(idx)}>
+                                <div className="int-track-faq-item" key={idx}>
+                                    <input type="checkbox" value={item.checked} name={`checkout-${idx}`} className="int-track-checkbox" />
+                                    <label className="int-track-ques" htmlFor={`checkout-${idx}`} onClick={() => refundCallback(idx)}>
                                         <p>{item.ques}</p>
-                                        <div className="faq-icon">
+                                        <div className="int-track-faq-icon">
                                             {
-                                                item.checked ? <img src={check} alt="Check" /> : <img src={uncheck} alt="UnCheck" />
+                                                item.checked ? <img src={uncheck} alt="UnCheck" /> : <img src={check} alt="Check" />
                                             }
                                         </div>
                                     </label>
-                                    <div className="ans" style={{ display: item.checked ? "block" : "none" }}>
+                                    <div className="int-track-ans" style={{ display: item.checked ? "block" : "none" }}>
                                         {
                                             item.ans
                                         }
@@ -131,6 +131,7 @@ function Faq(props) {
                 </div>
             </div>
         </section>
+
     );
 }
 

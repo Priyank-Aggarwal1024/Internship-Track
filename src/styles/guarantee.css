@@ -1,13 +1,13 @@
-.guarantee-heading {
+.int-track-guarantee-heading {
     color: var(--Woodsmoke-50, #F5F5F6);
 
 }
 
-.guarantee-section {
+.int-track-guarantee-section {
     width: 100%;
 }
 
-.guarantee-div {
+.int-track-guarantee-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,21 +19,28 @@
 }
 
 
-.guarantee-right {
+.int-track-guarantee-right {
     display: flex;
     gap: 35px;
     flex-direction: column;
     width: 50%;
+    max-width: 535px;
 }
 
-.company-div {
+/* .int-track-guarantee-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+} */
+
+.int-track-company-div {
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.company-hiring-box {
+.int-track-company-hiring-box {
     /* gap: 16.875px; */
     display: flex;
     width: 170px;
@@ -49,16 +56,16 @@
 
 
 @media (width<1080px) {
-    .guarantee-div {
+    .int-track-guarantee-div {
         flex-direction: column;
     }
 
-    .guarantee-right {
+    .int-track-guarantee-right {
         width: 100%;
         gap: 20px;
     }
 
-    .guarantee-div>img {
+    .int-track-guarantee-div>img {
         max-width: 480px;
     }
 }
@@ -67,22 +74,22 @@
 @media (width<580px) {
 
 
-    .guarantee-right {
+    .int-track-guarantee-right {
         gap: 14px;
 
     }
 }
 
 @media (width<480px) {
-    .guarantee-div {
+    .int-track-guarantee-div {
         padding: 20px 16px;
     }
 
-    .guarantee-div>img {
+    .int-track-guarantee-div>img {
         width: 80%;
     }
 
-    .company-hiring-box {
+    .int-track-company-hiring-box {
         margin-right: 12px;
     }
 }

@@ -1,37 +1,37 @@
-.navbar {
+.int-track-navbar {
     max-width: 1440px;
     margin: 0 auto;
     height: 100px;
     flex-shrink: 0;
-    padding: 20px 16px;
+    padding: 20px 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo-small {
+.int-track-logo-small {
     display: none;
 }
 
-.nav-left {
+.int-track-nav-left {
     display: flex;
     align-items: center;
 }
 
-.nav-list {
+.int-track-nav-list {
     display: flex;
     gap: 24px;
     padding: 0 31px;
 }
 
-.nav-btn {
+.int-track-nav-btn {
     display: flex;
     align-items: center;
     gap: 11px;
     padding-right: 100px;
 }
 
-.nav-login-btn {
+.int-track-nav-login-btn {
     text-align: center;
     font-family: Poppins;
     font-size: 16px;
@@ -53,7 +53,7 @@
     box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
 }
 
-.nav-signup-btn {
+.int-track-nav-signup-btn {
     display: flex;
     padding: 14px 41px;
     justify-content: center;
@@ -73,56 +73,67 @@
 
 
 @media (width<1180px) {
-    .nav-btn {
+    .int-track-nav-btn {
         padding-right: 32px;
     }
 }
 
 @media (width<980px) {
 
-    .nav-btn {
+    .int-track-nav-btn {
         padding-right: 16px;
     }
 
-    .nav-list {
+    .int-track-nav-list {
         display: none;
     }
 }
 
 @media (width<780px) {
-    .nav-btn {
+    .int-track-nav-btn {
         padding: 0;
     }
 
-    .nav-login-btn {
+    .int-track-nav-login-btn {
         font-size: 12px;
         padding: 8.5px 27px;
     }
 
-    .nav-signup-btn {
+    .int-track-nav-signup-btn {
         font-size: 12px;
         padding: 8.5px 20px;
     }
 
-    .navbar {
+    .int-track-navbar {
         height: 72px;
     }
 
-    .logo-large {
+    .int-track-logo-large {
         display: none;
     }
 
-    .logo-small {
+    .int-track-logo-small {
         display: inline;
     }
 
 }
 
+@media(width<580px) {
+    .int-track-navbar {
+        padding: 20px 31px;
+    }
+}
+
+@media(width<400px) {
+    .int-track-navbar {
+        padding: 20px 16px;
+    }
+}
 
 @media (width<355px) {
 
-    .nav-login-btn,
-    .nav-signup-btn {
+    .int-track-nav-login-btn,
+    .int-track-nav-signup-btn {
         padding: 8.5px 12px;
     }
 }

@@ -24,7 +24,7 @@ function Layout(props) {
         }
     })
     return (
-        <div className='layout'>
+        <div className='int-track-layout'>
             <Navbar />
             <Hero />
             <Guarantee />

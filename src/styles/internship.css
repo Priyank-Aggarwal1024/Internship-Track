@@ -1,9 +1,9 @@
-.internship-heading {
+.int-track-internship-heading {
     max-width: 690px;
     margin: 0 auto;
 }
 
-.internship-cards {
+.int-track-internship-cards {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, minmax(1fr, 947px));
@@ -14,7 +14,7 @@
     margin-left: auto;
 }
 
-.internship-card {
+.int-track-internship-card {
     position: relative;
     padding: 33px 20px 33px 50px;
     max-width: 947px;
@@ -25,33 +25,52 @@
     background: var(--Color-2, #FFF);
 }
 
-.internship-card-background {
+.int-track-internship-card-icon {
+    border-radius: 50%;
+}
+
+.int-track-internship-card-background {
     width: 100%;
     height: 100%;
     position: absolute;
     background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
     left: calc(19px - 100%);
     top: 0;
-}
-
-.internship-card-2>.internship-card-background {
-    top: 0;
-    left: 0;
     z-index: 10;
 }
 
-.internship-card-2>.internship-card-inner {
+.int-track-internship-card-1>.int-track-internship-card-background {
+    animation: animation1 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-2>.int-track-internship-card-background {
+    animation: animation2 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-3>.int-track-internship-card-background {
+    animation: animation3 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-4>.int-track-internship-card-background {
+    animation: animation4 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-5>.int-track-internship-card-background {
+    animation: animation5 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-inner {
     z-index: 100;
     position: relative;
 }
 
-.internship-card-inner {
+.int-track-internship-card-inner {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.internship-card-text {
+.int-track-internship-card-text {
     color: #150E42;
     font-family: Poppins;
     font-size: 18px;
@@ -60,33 +79,219 @@
     line-height: normal;
 }
 
+.int-track-internship-card-1 .int-track-internship-card-text {
+    animation: animate1 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-2 .int-track-internship-card-text {
+    animation: animate2 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-3 .int-track-internship-card-text {
+    animation: animate3 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-4 .int-track-internship-card-text {
+    animation: animate4 10s ease-in infinite normal;
+}
+
+.int-track-internship-card-5 .int-track-internship-card-text {
+    animation: animate5 10s ease-in infinite normal;
+}
 
 @media (width<580px) {
-    .internship-card {
+    .int-track-internship-card {
         padding: 17px 28px;
     }
 
-    .internship-card-inner {
+    .int-track-internship-card-inner {
         gap: 14px;
     }
 
-    .internship-card-icon {
+    .int-track-internship-card-icon {
         width: 68px;
         height: 68px;
     }
 
-    .internship-card-text {
+    .int-track-internship-card-text {
         font-size: 16px;
     }
 }
 
 @media (width<360px) {
-    .internship-card {
+    .int-track-internship-card {
         padding: 17px 14px;
     }
 
-    .internship-card-background {
+    .int-track-internship-card-background {
         left: calc(9px - 100%);
     }
 
+}
+
+@keyframes animation1 {
+    0% {
+        left: calc(19px - 100%);
+    }
+
+    2% {
+        left: 0;
+    }
+
+    18% {
+        left: 0;
+    }
+
+    20% {
+        left: calc(19px - 100%);
+    }
+}
+
+@keyframes animation2 {
+    20% {
+        left: calc(19px - 100%);
+    }
+
+    22% {
+        left: 0;
+    }
+
+    38% {
+        left: 0;
+    }
+
+    40% {
+        left: calc(19px - 100%);
+    }
+}
+
+@keyframes animation3 {
+    40% {
+        left: calc(19px - 100%);
+    }
+
+    42% {
+        left: 0;
+    }
+
+    58% {
+        left: 0;
+    }
+
+    60% {
+        left: calc(19px - 100%);
+    }
+
+}
+
+@keyframes animation4 {
+    60% {
+        left: calc(19px - 100%);
+    }
+
+    62% {
+        left: 0;
+    }
+
+    78% {
+        left: 0;
+    }
+
+    80% {
+        left: calc(19px - 100%);
+    }
+}
+
+@keyframes animation5 {
+    80% {
+        left: calc(19px - 100%);
+    }
+
+    82% {
+        left: 0;
+    }
+
+    98% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(19px - 100%);
+    }
+}
+
+@keyframes animate1 {
+    2% {
+        color: #FFF;
+    }
+
+    18% {
+        color: #FFF;
+    }
+
+    20% {
+        color: #150E42;
+    }
+
+    100% {
+        color: #150E42;
+
+    }
+}
+
+@keyframes animate2 {
+    22% {
+        color: #FFF;
+    }
+
+    38% {
+        color: #FFF;
+    }
+
+    40% {
+        color: #150E42;
+    }
+}
+
+@keyframes animate3 {
+    42% {
+        color: #FFF;
+    }
+
+    58% {
+        color: #FFF;
+    }
+
+    60% {
+        color: #150E42;
+    }
+
+}
+
+@keyframes animate4 {
+    62% {
+        color: #FFF;
+    }
+
+    78% {
+        color: #FFF;
+    }
+
+    80% {
+        color: #150E42;
+    }
+}
+
+@keyframes animate5 {
+    82% {
+        color: #FFF;
+    }
+
+    98% {
+        color: #FFF;
+    }
+
+    100% {
+        color: #150E42;
+    }
 }

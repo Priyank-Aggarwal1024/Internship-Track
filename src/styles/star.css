@@ -1,9 +1,9 @@
-.star-div {
+.int-track-star-div {
     display: flex;
     gap: 5px;
 }
 
-.star {
+.int-track-star {
     width: 25.264px;
     height: 25.264px;
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.previous-arrow {
+.int-track-previous-arrow {
     display: flex;
     width: 44.212px;
     height: 44.212px;
@@ -24,13 +24,13 @@
     margin-right: 15px;
 }
 
-.previous-arrow>svg {
+.int-track-previous-arrow>svg {
     width: 25.264px;
     height: 25.264px;
     flex-shrink: 0;
 }
 
-.next-arrow {
+.int-track-next-arrow {
     display: flex;
     width: 44.212px;
     height: 44.212px;
@@ -46,19 +46,19 @@
 
 }
 
-.next-arrow:hover>svg>path,
-.previous-arrow:hover>svg>path {
+.int-track-next-arrow:hover>svg>path,
+.int-track-previous-arrow:hover>svg>path {
     stroke: white;
 
 }
 
-.next-arrow:hover,
-.previous-arrow:hover {
+.int-track-next-arrow:hover,
+.int-track-previous-arrow:hover {
     background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
     border: none;
 }
 
-.next-arrow>svg {
+.int-track-next-arrow>svg {
     width: 25.264px;
     height: 25.264px;
     border-radius: 50%;
@@ -67,50 +67,50 @@
 }
 
 @media (width<1080px) {
-    .star>svg {
+    .int-track-star>svg {
         width: 18px;
         height: 18px;
 
     }
 
-    .star {
+    .int-track-star {
         width: 18px;
         height: 18px;
 
     }
 
-    .star-div {
+    .int-track-star-div {
         gap: 2px;
     }
 
-    .next-arrow {
+    .int-track-next-arrow {
         margin-left: 8px;
     }
 
-    .previous-arrow {
+    .int-track-previous-arrow {
         margin-right: 8px;
     }
 
 }
 
 @media (width<480px) {
-    .star-div {
+    .int-track-star-div {
         flex-wrap: wrap;
 
     }
 
-    .star,
-    .star>svg {
+    .int-track-star,
+    .int-track-star>svg {
         width: 14.574px;
         height: 14.574px;
     }
 
-    .tct-l {
+    .int-track-tct-l {
         gap: 8px;
     }
 
-    .next-arrow,
-    .previous-arrow {
+    .int-track-next-arrow,
+    .int-track-previous-arrow {
         width: 28px;
         height: 28px;
         /* margin: 0; */
@@ -121,7 +121,7 @@
     }
 
 
-    .previous-arrow>svg {
+    .int-track-previous-arrow>svg {
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -131,7 +131,7 @@
         transform: translate(-50%, 20%);
     }
 
-    .next-arrow>svg {
+    .int-track-next-arrow>svg {
         width: 20px;
         height: 20px;
         border-radius: 50%;

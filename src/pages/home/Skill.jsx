@@ -79,23 +79,23 @@ const achivement = [
 ]
 function Skill(props) {
     return (
-        <section className="section section-skill">
-            <div className="skill">
+        <section className="int-track-section int-track-section-skill">
+            <div className="int-track-skill">
 
-                <h2 className="skill-heading f-48 fw-500 text-black text-center">
-                    <span className="fw-700 text-pink">Skills and tools </span>
+                <h2 className="int-track-skill-heading int-track-f-48 int-track-fw-500 int-track-text-black int-track-text-center">
+                    <span className="int-track-fw-700 int-track-text-pink">Skills and tools </span>
                     {"you will learn"}
                 </h2>
-                <div className="skill-cards" >
+                <div className="int-track-skill-cards" >
                     {
                         cards.map((item, idx) => {
                             return (
-                                <div className="skill-card" key={idx}>
-                                    <div className="skill-card-inner">
-                                        <div className="skill-card-icon">
+                                <div className="int-track-skill-card" key={idx}>
+                                    <div className="int-track-skill-card-inner">
+                                        <div className="int-track-skill-card-icon">
                                             <img src={item.icon} alt={item.text} />
                                         </div>
-                                        <div className="skill-card-text">
+                                        <div className="int-track-skill-card-text">
                                             {item.text}
                                         </div>
                                     </div>
@@ -105,20 +105,20 @@ function Skill(props) {
                     }
                 </div>
             </div>
-            <div className="achivement">
-                <h3 className="achivement-heading f-48 fw-500 text-white text-center">
+            <div className="int-track-achivement">
+                <h3 className="int-track-achivement-heading int-track-f-48 int-track-fw-500 int-track-text-white int-track-text-center">
                     {"Our "}
-                    <span className="fw-700">Achievements</span>
+                    <span className="int-track-fw-700">Achievements</span>
                 </h3>
-                <div className="achivement-cards">
+                <div className="int-track-achivement-cards">
                     {
                         achivement.map((item, idx) => (
-                            <div className="achivement-card" key={idx}>
-                                <div className="achive-head">
+                            <div className="int-track-achivement-card" key={idx}>
+                                <div className="int-track-achive-head">
                                     {item.head}
                                     {item.childern ? item.childern : null}
                                 </div>
-                                <div className="achive-text">
+                                <div className="int-track-achive-text">
                                     {item.text}
                                 </div>
                             </div>

@@ -16,49 +16,49 @@ import Marquee from 'react-fast-marquee'
 function Guarantee(props) {
     return (
         <>
-            <section className="section guarantee-section">
-                <div className="guarantee-div">
+            <section className="int-track-section int-track-guarantee-section">
+                <div className="int-track-guarantee-div">
                     <img src={GuaranteeImg} alt="Guarantee Internship" />
-                    <div className="guarantee-right">
-                        <h2 className="section-heading guarantee-heading f-48 fw-400">India’s 1st Stipend Guranteed <span className="fw-700">Internship Programme</span></h2>
+                    <div className="int-track-guarantee-right">
+                        <h2 className="int-track-section-heading int-track-guarantee-heading int-track-f-48 int-track-fw-400">India’s 1st Stipend Guranteed <span className="int-track-fw-700">Internship Programme</span></h2>
                         <ApplyBtn classes={""} />
                     </div>
                 </div>
             </section>
-            <div className="company-div">
-                <h2 className="company-heading f-48 fw-500 text-black text-center">
-                    Companies hiring <span className="fw-700 text-pink">for web developer</span>
+            <div className="int-track-company-div">
+                <h2 className="int-track-company-heading int-track-f-48 int-track-fw-500 int-track-text-black int-track-text-center">
+                    Companies hiring <span className="int-track-fw-700 int-track-text-pink">for web developer</span>
                 </h2>
                 <Marquee>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp3} alt="Google" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp7} alt="Microsoft" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp8} alt="Ola" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp5} alt="Flipkart" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp6} alt="Myntra" />
                     </div>
 
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp2} alt="Intuit" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp4} alt="Amazon" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp10} alt="Accenture" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp1} alt="IBM" />
                     </div>
-                    <div className="company-hiring-box">
+                    <div className="int-track-company-hiring-box">
                         <img src={Comp9} alt="Virtusa" />
                     </div>
                 </Marquee>

@@ -55,28 +55,28 @@ function VideoReview(props) {
         setCarousel(temp)
     }
     return (
-        <section className="section section-videoreview">
-            <div className="video-review-heading">
-                <p className="f-48 fw-400 text-black">Video
+        <section className="int-track-section int-track-section-videoreview">
+            <div className="int-track-video-review-heading">
+                <p className="int-track-f-48 int-track-fw-400 int-track-text-black">Video
                     Reviews from</p>
-                <p className="f-48 fw-700 text-pink">Our Students!</p>
-                <p className="wood-smoke-950 fw-400 review-video-para">Watch and be inspired by our students sharing their success stories through video reviews.</p>
+                <p className="int-track-f-48 int-track-fw-700 int-track-text-pink">Our Students!</p>
+                <p className="int-track-wood-smoke-950 int-track-fw-400 int-track-review-video-para">Watch and be inspired by our students sharing their success stories through video reviews.</p>
             </div>
-            <div className="video-review-carousel">
-                <div className="video-review-top">
+            <div className="int-track-video-review-carousel">
+                <div className="int-track-video-review-top">
                     {
                         carousel.map((item, idx) => {
                             return (
-                                <div className="video-carousel-card" key={idx} onClick={idx == 0 ? () => { } : () => nextCallback(idx)}>
+                                <div className="int-track-video-carousel-card" key={idx} onClick={idx == 0 ? () => { } : () => nextCallback(idx)}>
                                     <img src={item.img} alt="Video Review" />
-                                    <div className="video-review-author">{item.name}</div>
-                                    <div className="video-review-profession">{item.profession}</div>
+                                    <div className="int-track-video-review-author">{item.name}</div>
+                                    <div className="int-track-video-review-profession">{item.profession}</div>
                                 </div>
                             )
                         })
                     }
                 </div>
-                <div className="video-review-bottom">
+                <div className="int-track-video-review-bottom">
                     <PrevArrow onClick={prevCallback} style={{}} classN="" />
                     <NextArrow onClick={() => nextCallback(1)} style={{}} classN="" />
                     {/* <Next onClick={prevCallback} style={{}} classN="" /> */}
