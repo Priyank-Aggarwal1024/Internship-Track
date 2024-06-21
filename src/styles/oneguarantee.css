@@ -6,6 +6,10 @@
 
 }
 
+.int-track-one-guarantee {
+    /* overflow: hidden; */
+}
+
 .int-track-og-heading {
     margin-bottom: 50px;
 }
@@ -175,9 +179,11 @@
     .int-track-og-card-heading {
         font-size: 20px;
     }
-.int-track-og-cards>div{
-    width:calc(100% - 37px);
-}
+
+    .int-track-og-cards>div {
+        width: calc(100% - 37px);
+    }
+
     .int-track-og-svg {
         width: 40px;
         height: 40px;
@@ -207,8 +213,9 @@
 
     }
 }
-@media (width<360px){
-    .int-track-section.int-track-one-guarantee{
-        padding:48px 12px;
+
+@media (width<360px) {
+    .int-track-section.int-track-one-guarantee {
+        padding: 48px 12px;
     }
 }

@@ -5,6 +5,11 @@
 
 }
 
+.int-track-section,
+.int-track-section.int-track-hero-section {
+    padding-top: 16px;
+}
+
 .int-track-hero-section>div {
     width: 50%;
 }
@@ -73,6 +78,7 @@
     justify-content: center;
     position: relative;
 }
+
 
 .int-track-hero-right-design {
     position: absolute;

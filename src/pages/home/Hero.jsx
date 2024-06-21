@@ -4,7 +4,6 @@ import ApplyBtn from '../../components/reusable/ApplyBtn';
 function Hero(props) {
     return (
         <section className="int-track-section int-track-hero-section">
-
             <div className="int-track-hero-left">
                 <div className="int-track-hero-left-top">
                     <div className="int-track-hero-left-iit int-track-text-pink">An IIT Delhi Alumni Initiative</div>
